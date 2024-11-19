@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+    
+<!-- Navbar -->
+    <nav class="sticky top-0 z-30 bg-white backdrop-filter border-b border-gray-200 bg-opacity-30 backdrop-blur-lg">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="Assets/logo.png" class="h-10" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">Travelku</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse">
+            <li>
+                <a href="#home" class="block py-2 px-3 bg-orange-700 rounded md:bg-transparent md:text-black-700 md:p-0 md:dark:hover:text-orange-500" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+                <a href="#service" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Services</a>
+            </li>
+            <li>
+                <a href="#Testimonial" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-orange-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Testimonial</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+<!-- Auto scroll Banner And Home -->
+<section id="home">
+        <div class="sliderAx h-auto">
+            <div id="slider-1" class="container mx-auto">
+            <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.beta.cosmos.so/a7af7e15-e21f-4ec3-b600-c27b183b7e18.?format=jpeg)">
+            <div class="md:w-1/2">
+            <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Concert</p>
+            <p class="text-2xl mb-10 leading-none">explore and order your concert tickets now</p>
+            <a href="#" class="bg-orange-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+            </div>  
+        </div> <!-- container -->
+            <br>
+            </div>
+    
+            <div id="slider-2" class="container mx-auto">
+            <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.beta.cosmos.so/3f49a89e-b7f7-40ad-bbf4-61f6f86cdd17?format=jpeg)">
+            
+        <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Travel</p>
+            <p class="text-2xl mb-10 leading-none">explore your new world now</p>
+            <a href="#" class="bg-orange-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+            
+        </div> <!-- container -->
+            <br>
+            </div>
+        </div>
+    <div  class="flex justify-between w-12 mx-auto pb-2">
+        <button id="sButton1" onclick="sliderButton1()" class="bg-orange-400 rounded-full w-4 pb-2 " ></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-orange-400 rounded-full w-4 p-2"></button>
+    </div>
+</section>
+
+
+<!-- About -->
+<section id="about">
+    <div class="mt-5 min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
+    <div class="py-16 bg-white">  
+        <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div class="md:5/12 lg:w-5/12">
+                <img src="https://images.beta.cosmos.so/43c4156d-4cf3-4619-9e68-4a7dde3a54ca?format=jpeg" alt="image" loading="lazy" width="" height="">
+            </div>
+            <div class="md:7/12 lg:w-6/12">
+                <div>
+                    <h2 class="text-3xl font-light">
+                        About Us
+                    </h2>
+                    <div class="h-1 bg-gray-300 w-10 mt-2"></div>
+                </div>
+                <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">To connect you with the world's most breathtaking destinations.</h2>
+                <p class="mt-6 text-gray-600">At Travelku, we believe that travel is more than just visiting new places; it's about creating memories that last a lifetime. Founded with a passion for exploration and discovery, we strive to make your journey seamless, exciting, and deeply enriching.</p>
+                <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+    
+
+<!-- service and card planner -->
+<section id="service">
+    <div class="w-4/5 mb-10 mx-auto mt-32">
+        <section class="flex flex-wrap md:flex-nowrapn mb-16">
+            <!-- Bagian Trip Planner -->
+            <div class="w-full md:w-2/5 mb-8 md:mb-0">
+                <div>
+                <h2 class="text-3xl font-light">
+                    Trip Planner
+                </h2>
+                <div class="h-1 bg-gray-300 w-10 mt-2"></div>
+                </div>
+                <p class="text-sm text-gray-500 font-normal my-4 leading-loose">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                mollitia enim aliquid debitis, dolor deserunt nihil in culpa vitae
+                quibusdam qui earum cum! Similique eveniet at magnam laboriosam
+                consequatur illo.
+                </p>
+                <button
+                class="bg-orange-600 py-3 px-5 text-xs font-semibold text-white flex justify-center items-center mt-4 shadow-lg"
+                >
+                Explore <i data-feather="arrow-right" class="ml-1 h-4"></i>
+                </button>
+            </div>
+        
+            <!-- Bagian Cards -->
+            <div class="w-full md:w-2/4 flex flex-wrap justify-between gap-4">
+                <!-- Card 1 -->
+                <div class="w-full sm:w-5/12">
+                <div>
+                    <div class="relative image-section">
+                    <img
+                        src="https://images.beta.cosmos.so/3d7b0bbe-076c-4a0f-b0d8-fa224d9fe4fb?format=jpeg"
+                        alt="Umbrellas at the beach"
+                        class="w-full h-auto"
+                    />
+                    <div
+                        class="absolute bg-white p-2 shadow-lg right-0 bottom-0 flex items-center justify-center w-16"
+                    >
+                        <span class="text-xxs absolute font-bold dollar-sign">$</span>
+                        <p class="m-0 text-base font-semibold">479</p>
+                    </div>
+                    </div>
+                    <p class="text-sm font-medium mt-2">
+                    Tour Raja Ampat
+                    </p>
+                    <div class="flex mt-2">
+                    <p class="uppercase text-gray-500 font-semibold text-xxs">
+                        15 days tour
+                    </p>
+                    <div class="flex ml-10">
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i data-feather="star" class="h-3 text-gray-400 w-3"></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="w-full sm:w-5/12">
+                <div>
+                    <div class="relative image-section">
+                    <img
+                        src="https://images.beta.cosmos.so/4a16c8c6-d69e-422f-96e1-4da561d6f267?format=jpeg"
+                        alt="Umbrellas at the beach"
+                        class="w-full h-auto"
+                    />
+                    <div
+                        class="absolute bg-white p-2 shadow-lg right-0 bottom-0 flex items-center justify-center w-16"
+                    >
+                        <span class="text-xxs absolute font-bold dollar-sign">$</span>
+                        <p class="m-0 text-base font-semibold">479</p>
+                    </div>
+                    </div>
+                    <p class="text-sm font-medium mt-2">
+                    Tour Pulau Dewata Bali
+                    </p>
+                    <div class="flex mt-2">
+                    <p class="uppercase text-gray-500 font-semibold text-xxs">
+                        15 days tour
+                    </p>
+                    <div class="flex ml-10">
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                            <i
+                            data-feather="star"
+                            class="h-3 fill-orange mr-1 text-orange-600 w-3"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+
+
+
+
+<!-- Desk service -->
+    <div class="max-w-screen-lg mx-auto gap-10 mb-16 mt-16 px-5">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-3xl font-bold mt-5 mb-5 text-gray-600">
+                Explore the World with Us - Your Ultimate Travel & Concert Experience.
+            </h1>
+            <p class="text-xl mb-5 font-light">Our Services</p>
+        </div>
+        <div class="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mb-16 mt-16 px-5">
+    
+            <!-- Travel Packages -->
+            <div class="flex gap-4 items-start flex-col">
+                <span class="text-orange-600 bg-violet-500/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7.09-3.87-7.45-7.93H5v2c0 .55.45 1 1 1h2v-4H6c-.55 0-1 .45-1 1v1H3.55c.35-4.05 3.5-7.43 7.45-7.92V5c0-.55.45-1 1-1s1 .45 1 1v2h-4v2h4V7h-1c-.55 0-1 .45-1 1v1h2c.55 0 1-.45 1-1V6h2v2c0 .55-.45 1-1 1h-2v4h4v-1c0-.55-.45-1-1-1h-1v-1c0-.55.45-1 1-1h4v2h-1c-.55 0-1 .45-1 1v1h1.45c-.36 4.06-3.51 7.43-7.45 7.93V19h-2v.93z"/>
+                    </svg>
+                </span>
+                <div>
+                    <h3 class="font-semibold text-xl">Travel Packages</h3>
+                    <p class="mt-1 text-gray-500">
+                        From scenic escapes to exotic getaways, choose from our expertly curated itineraries.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Concert Ticket Bookings -->
+            <div class="flex gap-4 items-start flex-col">
+                <span class="text-orange-600 bg-violet-500/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 2c-1.1 0-2 .9-2 2v5H6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h1v5c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-5h1c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2h-1V4c0-1.1-.9-2-2-2H9zm0 2h6v5H9V4zm7 8h1v4h-1v-4zM8 12v4H7v-4h1zm8 0v4h-6v-4h6z"/>
+                    </svg>
+                </span>
+                <div>
+                    <h3 class="font-semibold text-xl">Concert Ticket Bookings</h3>
+                    <p class="mt-1 text-gray-500">
+                        Skip the hassle and book tickets for top concerts in advance. From global superstars to local legends, we’ve got you covered.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 24/7 Support -->
+            <div class="flex gap-4 items-start flex-col">
+                <span class="text-orange-600 bg-violet-500/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.07 2.5c-4.38.37-7.85 3.83-8.22 8.21-.05.59.44 1.08 1.02 1.08h3.44c.48 0 .91-.34 1.02-.81.58-2.64 3.19-4.21 5.92-3.62.48.11.81.54.81 1.02v3.44c0 .58.49 1.07 1.08 1.02 4.38-.37 7.84-3.83 8.21-8.22C22.5 4.18 17.82.5 12 .5c-.47 0-.93.02-1.39.06-.37.03-.67.33-.67.71v1.07c0 .4.33.72.73.71C9.93 2.5 10.5 2.5 11.07 2.5z"/>
+                    </svg>
+                </span>
+                <div>
+                    <h3 class="font-semibold text-xl">24/7 Support</h3>
+                    <p class="mt-1 text-gray-500">
+                        Our team is available around the clock to ensure your trip is smooth, from the moment you book to the final encore at the concert.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+
+<!-- Testimonial -->
+<section id="Testimonial">
+    <div class="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
+        <div class="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+            <div class="w-full max-w-6xl mx-auto">
+                <div class="text-center max-w-xl mx-auto">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600">What people <br>are saying.</h1>
+                    <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <div class="text-center mb-10">
+                        <span class="inline-block w-1 h-1 rounded-full bg-orange-500 ml-1"></span>
+                        <span class="inline-block w-3 h-1 rounded-full bg-orange-500 ml-1"></span>
+                        <span class="inline-block w-40 h-1 rounded-full bg-orange-500"></span>
+                        <span class="inline-block w-3 h-1 rounded-full bg-orange-500 ml-1"></span>
+                        <span class="inline-block w-1 h-1 rounded-full bg-orange-500 ml-1"></span>
+                    </div>
+                </div>
+                <div class="-mx-3 md:flex items-start">
+                    <div class="px-3 md:w-1/3">
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=1" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Kenzie Edgar.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=2" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Stevie Tifft.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=3" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Tommie Ewart.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=4" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Charlie Howse.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=5" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Nevada Herbertson.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                        <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="https://i.pravatar.cc/100?img=6" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Kris Stanton.</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- buble chat whatsappp -->
+<div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+    <div>
+        <a href="" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+            <img class="object-cover object-center w-full h-full rounded-full" src="https://d3sxshmncs10te.cloudfront.net/icon/free/svg/3073755.svg?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkM3N4c2htbmNzMTB0ZS5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTczMjA4MTk4MiwicSI6bnVsbCwiaWF0IjoxNzMxODIyNzgyfQ__.1dc3e9d95da7fbb4a42ca558ecef0d65524b0a83e9b05030f546c3ee5d5d3578"/>
+        </a>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="relative bg-orange-400 pt-8 pb-6">
+    <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+        <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold ">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 ">
+            We will respond to you because our service is 24/7
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+            <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-instagram"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-whatsapp"></i>
+            </button>
+        </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+                <li>
+                    <a class="hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">About Us</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Blog</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.instagram.com/farasalg_/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Free Products</a>
+                </li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+                <span class="block uppercase text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Category Trip</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a class=" hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#"">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <hr class="my-6 border-blueGray-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm font-semibold py-1">
+            Copyright © <span id="get-current-year">2021</span>.
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- function autoslider / don't delete it! -->
+    <script>
+        var cont = 0;
+        var xx;
+
+        function loopSlider() {
+            xx = setInterval(function () {
+                if (cont === 0) {
+                    $("#slider-1").fadeOut(400);
+                    $("#slider-2").delay(400).fadeIn(400);
+                    $("#sButton1").removeClass("bg-orange-800");
+                    $("#sButton2").addClass("bg-orange-800");
+                    cont = 1;
+                } else {
+                    $("#slider-2").fadeOut(400);
+                    $("#slider-1").delay(400).fadeIn(400);
+                    $("#sButton2").removeClass("bg-orange-800");
+                    $("#sButton1").addClass("bg-orange-800");
+                    cont = 0;
+                }
+            }, 8000);
+        }
+
+        function reinitLoop(time) {
+            clearInterval(xx);
+            setTimeout(loopSlider, time);
+        }
+
+        function sliderButton1() {
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-orange-800");
+            $("#sButton1").addClass("bg-orange-800");
+            reinitLoop(4000);
+            cont = 0;
+        }
+
+        function sliderButton2() {
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-orange-800");
+            $("#sButton2").addClass("bg-orange-800");
+            reinitLoop(4000);
+            cont = 1;
+        }
+
+        $(window).ready(function () {
+            $("#slider-2").hide();
+            $("#sButton1").addClass("bg-orange-800");
+            loopSlider();
+        });
+    </script>
+
+
+<!-- fungsi autoscroll navbar / don't delete it! -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+
+<!-- cdn library icon / don't delete it! -->
+    <script>
+        feather.replace();
+    </script>
+    
+</body>
+</html>
